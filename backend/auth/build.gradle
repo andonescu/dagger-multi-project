@@ -1,0 +1,10 @@
+plugins {
+    id "net.ltgt.apt" version "0.10"
+}
+
+// Add Dagger dependencies
+dependencies {
+    apt 'com.google.dagger:dagger-compiler:2.15'
+
+    compile project(':backend:config')
+}

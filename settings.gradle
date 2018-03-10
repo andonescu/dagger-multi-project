@@ -1,0 +1,9 @@
+rootProject.name = 'dagger-multi-project'
+include 'backend'
+include 'backend:config'
+include 'backend:auth'
+include 'backend:aggregator'
+findProject(':backend:config')?.name = 'config'
+findProject(':backend:auth')?.name = 'auth'
+findProject(':backend:aggregator')?.name = 'aggregator'
+

@@ -1,0 +1,10 @@
+group 'ro.andonescu.playground.di'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+subprojects {
+    version '1.0-SNAPSHOT'
+}

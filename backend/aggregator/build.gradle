@@ -1,0 +1,15 @@
+plugins {
+    id "net.ltgt.apt" version "0.10"
+}
+
+apply plugin: 'application'
+
+mainClassName = "ro.andonescu.playground.di.dagger.aggregator.Main"
+
+// Add Dagger dependencies
+dependencies {
+    apt 'com.google.dagger:dagger-compiler:2.15'
+
+    compile project(':backend:config')
+    compile project(':backend:auth')
+}
